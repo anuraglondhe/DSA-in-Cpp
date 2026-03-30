@@ -3,7 +3,7 @@ using namespace std;
 
 int sumOfDig(int num){
 
-    int DigSum = 0;    
+    int DigSum = 0;   
     while(num > 0){
         int lastDig = num%10;
         num = num/10;
