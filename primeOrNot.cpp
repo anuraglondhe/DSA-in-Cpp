@@ -67,7 +67,7 @@ int main(){
 
 
 
-        int n=7,i=2;
+        int n=21,i=2;
         bool isPrime=true;
 
         if(n<=1){

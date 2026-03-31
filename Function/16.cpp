@@ -4,26 +4,21 @@
 using namespace std;
 
 void primeOrNot(int n){
-    bool isPrime = false;
-    if(n > 0){
-        for(int i=1; i<=n; i++){
+    bool isPrime = true;
+    if(n <= 1){
+        isPrime = false;
+    }else{
+        
+        for(int i=2; i*i<=n; i++){
             if(n%i == 0){
-                // cout<<"Prime" ;
                 isPrime = false;
                 break;
             }
-            else{
-                // cout<<"notPrime" ;
-                isPrime = true;
-            }
         }
 
-    }else{
-        // cout<<"notPrime" ;
-        isPrime = false;
     }
 
-    if (isPrime == true){
+    if (isPrime){
         cout<<"This is Prime Number."<<endl;
     }else{
         cout<<"This is not Prime Number."<<endl;
@@ -32,7 +27,6 @@ void primeOrNot(int n){
 
 int main(){
     int n=7;
-    // cout<<primeOrNot(n)<<endl;
     primeOrNot(n);
     return 0;
 }
